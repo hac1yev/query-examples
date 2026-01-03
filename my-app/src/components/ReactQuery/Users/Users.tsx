@@ -25,7 +25,7 @@ const Users = () => {
     data: users,
   } = useSuspenseQuery<IUsers | []>({
     queryKey: ["users"],
-    queryFn: userApi.bind(null, { endpoint: "api/uses", method: "GET" }),
+    queryFn: userApi.bind(null, { endpoint: "api/users", method: "GET" }),
   });
 
   return (
