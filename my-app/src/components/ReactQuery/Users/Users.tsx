@@ -10,6 +10,8 @@ import Paper from "@mui/material/Paper";
 import { Box } from "@mui/material";
 import AddUser from "./AddUser";
 import UserItem from "./UserItem";
+import Button from "../../Button/Button";
+import Input from "../../Input/Input";
 
 export interface IUserItem {
   id: number;
@@ -51,6 +53,8 @@ const Users = () => {
           </TableBody>
         </Table>
       </TableContainer>
+      <Input fullWidth={false} helperText="Error happened" />
+      <Button onClick={() => console.log("Azee")}>Submit</Button>
     </Box>
   );
 };

@@ -1,0 +1,48 @@
+.input-wrapper {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.input-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  color: #000 !important;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.input.error {
+  margin: 0;
+  border-color: #dc2626;
+}
+
+.input.disabled {
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+}
+
+.input-message {
+  font-size: 12px;
+  margin: 0;
+  color: #6b7280;
+}
+
+.input-message.error {
+  color: #dc2626;
+}
